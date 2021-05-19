@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #15161c;
+}
+
+table {
+  width: 85%;
+  margin: 15px auto;
+  overflow-x: auto;
+  border-collapse: collapse;
+  padding: 50px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.first-table {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, auto)
+    minmax(150px, auto)
+    minmax(150px, auto)
+    minmax(150px, auto)
+    minmax(150px, auto)
+    minmax(150px, auto);
+  background: #1e1f26;
+  box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.second-table {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, auto)
+    minmax(150px, auto)
+    minmax(150px, auto);
+  background: #1e1f26;
+  box-shadow: 0px 6px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+tr {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+td,
+th {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #292a31;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+  font-weight: 700;
+  display: block;
+  color: #f2f2f2;
+  font-size: 1.1em;
+}
+
+input {
+  padding: 16px 32px;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+}
+
+input[type="number"] {
+  border-radius: 8px;
+  background-color: #292a31;
+  color: #fff;
+  text-align: center;
+}
+
+#submitButton {
+  display: block;
+  padding: 16px 32px;
+  background-color: #00d69d;
+  color: #fff;
+  background: #0aba95;
+  box-shadow: 0px 0px 5px rgba(10, 186, 149, 0.35);
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-weight: 700;
+  border: none;
+  margin: auto;
+  width: auto;
+}
+
+.maximin,
+.maximax,
+.laplace,
+.minimax {
+  background-color: transparent;
+  color: white;
+}
+
+.hurwicz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hurwicz div {
+  margin: 20px;
+}
