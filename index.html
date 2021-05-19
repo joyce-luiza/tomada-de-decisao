@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tomada de Decisão</title>
+  </head>
+
+  <body>
+    <h1>Tomada de Decisão</h1>
+    <table class="first-table">
+      <thead>
+        <tr>
+          <th><h2>Produto</h2></th>
+          <th><h2>Cenário Positivo</h2></th>
+          <th><h2>Cenário Neutro</h2></th>
+          <th><h2>Cenário Negativo</h2></th>
+          <th><h2>Laplace</h2></th>
+          <th><h2>Minimax</h2></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="first-row">
+          <td><h3>Produto 1</h3></td>
+          <td>
+            <input type="number" class="first positive-product" autofocus />
+          </td>
+
+          <td>
+            <input type="number" class="first neutral-product" />
+          </td>
+          <td>
+            <input type="number" class="first negative-product" />
+          </td>
+          <td>
+            <input class="laplace" disabled />
+          </td>
+          <td>
+            <input class="minimax" disabled />
+          </td>
+        </tr>
+
+        <tr class="second-row">
+          <td><h3>Produto 2</h3></td>
+          <td>
+            <input type="number" class="second positive-product" />
+          </td>
+          <td>
+            <input type="number" class="second neutral-product" />
+          </td>
+          <td>
+            <input type="number" class="second negative-product" />
+          </td>
+          <td>
+            <input class="laplace" disabled />
+          </td>
+          <td>
+            <input class="minimax" disabled />
+          </td>
+        </tr>
+
+        <tr class="third-row">
+          <td>
+            <h3>Produto 3</h3>
+          </td>
+          <td>
+            <input type="number" class="third positive-product" />
+          </td>
+          <td>
+            <input type="number" class="third neutral-product" />
+          </td>
+          <td>
+            <input type="number" class="third negative-product" />
+          </td>
+          <td>
+            <input class="laplace" disabled />
+          </td>
+          <td>
+            <input class="minimax" disabled />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <h3>Maximin</h3>
+          </td>
+          <td>
+            <input class="maximin" disabled />
+          </td>
+          <td>
+            <input class="maximin" disabled />
+          </td>
+          <td>
+            <input class="maximin" disabled />
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>
+            <h3>Maximax</h3>
+          </td>
+          <td>
+            <input class="maximax" disabled />
+          </td>
+          <td>
+            <input class="maximax" disabled />
+          </td>
+          <td>
+            <input class="maximax" disabled />
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <input type="submit" id="submitButton" value="Calcular" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
